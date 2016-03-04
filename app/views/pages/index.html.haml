@@ -1,0 +1,36 @@
+%h1 Sample Descriptive Statistics
+
+%h3 Descriptive Statistics
+%table
+  %tr
+    %td raw
+    %td users_descriptive_statistics.map(&:age)
+    %td= users_descriptive_statistics.map(&:age)
+  %tr
+    %td mean
+    %td users_descriptive_statistics.mean(&:age)
+    %td= users_descriptive_statistics.mean(&:age)
+  %tr
+    %td median
+    %td users_descriptive_statistics.median(&:age)
+    %td= users_descriptive_statistics.median(&:age)
+  %tr
+    %td mode
+    %td users_descriptive_statistics.mode(&:age)
+    %td= users_descriptive_statistics.mode(&:age)
+  %tr
+    %td number
+    %td users_descriptive_statistics.number(&:age)
+    %td= users_descriptive_statistics.number(&:age)
+  %tr
+    %td range
+    %td users_descriptive_statistics.range(&:age)
+    %td= users_descriptive_statistics.range(&:age)
+  %tr
+    %td sum 
+    %td users_descriptive_statistics.sum(&:age)
+    %td= users_descriptive_statistics.sum(&:age)
+  %tr
+    %td variance age
+    %td users_descriptive_statistics.variance(&:age)
+    %td= users_descriptive_statistics.variance(&:age)
